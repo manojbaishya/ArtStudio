@@ -1,0 +1,5 @@
+@startuml ArtStudio
+!include ./Program.puml
+!include ./WeatherForecast.puml
+!include ./Controllers/WeatherForecastController.puml
+@enduml

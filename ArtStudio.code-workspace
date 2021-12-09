@@ -1,0 +1,19 @@
+{
+    "folders": [
+        {
+            "path": "backend"
+        },
+        {
+            "path": "frontend"
+        },
+        {
+            "path": "utilities"
+        }
+    ],
+    "settings": {
+        "csharp2plantuml.inputPath": "ArtStudio.Core",
+        "csharp2plantuml.outputPath": "ArtStudio.Diagrams/ArtStudio.Core",
+        "cSpell.enabled": false,
+        "workspaceRoot": "/home/manoj/Data/Personal/Projects/Code/General/ArtStudio"
+    }
+}

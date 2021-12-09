@@ -1,0 +1,6 @@
+<Project>
+    <PropertyGroup>
+        <BaseOutputPath>$(SolutionDir)\Artifacts\Binaries\$(MSBuildProjectName)\</BaseOutputPath>
+        <BaseIntermediateOutputPath>$(SolutionDir)\Artifacts\Objects\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
+    </PropertyGroup>
+</Project>

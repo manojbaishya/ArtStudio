@@ -1,0 +1,18 @@
+body.dark {
+    --bg-color: rgb(40, 40, 40);
+    --bg-secondary-color: #131316;
+    --font-color: #f5f5f5;
+    --color-grey: #ccc;
+    --color-darkGrey: #777;
+}
+
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
+.glider-contain {
+    margin-top: 3em;
+    width: 50%;
+}
