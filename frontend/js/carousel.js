@@ -1,11 +1,14 @@
-window.addEventListener('load', function () {
+export { createNewCarousel };
+
+function createNewCarousel() {
     new Glider(document.querySelector('.glider'), {
         slidesToShow: 1,
+        slidesToScroll: 1,
         dots: '#dots',
-        draggable: false,
+        draggable: true,
         arrows: {
             prev: '.glider-prev',
             next: '.glider-next'
         }
     });
-})
+}

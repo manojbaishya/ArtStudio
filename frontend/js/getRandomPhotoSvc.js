@@ -1,3 +1,5 @@
+import { config } from './config.js';
+export { UnsplashApi, PixabayApi, PexelsApi };
 class UnsplashApi {
     static async getRandomPhotos(count, orientation) {
         const endpoint = `https://api.unsplash.com/photos/random?count=${count}&orientation=${orientation}&sig=${Math.ceil(100 * Math.random())}`;
@@ -11,14 +13,11 @@ class UnsplashApi {
             }
         }
         const response = await fetch(endpoint, header);
-
         if (!response.ok) {
             throw new Error(`Photo Service Error: ${response.status} ${response.statusText}`);
         }
-
         return response.json();
     }
-
     static async assignImagesToSlides() {
         const pictures = await UnsplashApi.getRandomPhotos(3, "landscape");
         for (let idx = 0; idx < pictures.length; idx++) {
@@ -26,9 +25,7 @@ class UnsplashApi {
             slide.innerHTML = `<img src=${pictures[idx].urls.regular} alt="Carousel slide ${idx + 1}">`;
         }
     }
-
 }
-
 class PixabayApi {
     static async getRandomPhotos(count, query, orientation) {
         const endpoint = `https://pixabay.com/api/?key=${config.PixabayApiKey}&q=${encodeURIComponent(query)}&orientation=${orientation}&image_type=photo&page=1&per_page=${count}`;
@@ -41,14 +38,11 @@ class PixabayApi {
             }
         }
         const response = await fetch(endpoint, header);
-
         if (!response.ok) {
             throw new Error(`Photo Service Error: ${response.status} ${response.statusText}`);
         }
-
         return response.json();
     }
-
     static async assignImagesToSlides(count) {
         const pictures = await PixabayApi.getRandomPhotos(count, "architecture", "horizontal");
         for (let idx = 0; idx < count; idx++) {
@@ -57,7 +51,6 @@ class PixabayApi {
         }
     }
 }
-
 class PexelsApi {
     static async getRandomPhotos(count, query, orientation) {
         const endpoint = `https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&orientation=${orientation}&size=small&page=1&per_page=${count}`;
@@ -71,23 +64,16 @@ class PexelsApi {
             }
         }
         const response = await fetch(endpoint, header);
-
         if (!response.ok) {
             throw new Error(`Photo Service Error: ${response.status} ${response.statusText}`);
         }
-
         return response.json();
     }
-
-    static async assignImagesToSlides(count) {
-        const pictures = await PexelsApi.getRandomPhotos(count, "architecture", "landscape");
+    static async assignImagesToSlides(count, query) {
+        const pictures = await PexelsApi.getRandomPhotos(count, query, "landscape");
         for (let idx = 0; idx < count; idx++) {
             let slide = document.getElementById(`carousel-slide${idx + 1}`);
             slide.innerHTML = `<img src=${pictures.photos[idx].src.medium} alt="Carousel slide ${idx + 1}">`;
         }
     }
 }
-
-// UnsplashApi.assignImagesToSlides();
-// PixabayApi.assignImagesToSlides();
-PexelsApi.assignImagesToSlides(3);

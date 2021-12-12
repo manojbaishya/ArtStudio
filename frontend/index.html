@@ -7,14 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art Studio</title>
 
-    <link rel="stylesheet" href="https://unpkg.com/chota" integrity="sha384-NbUQ8fi+g8yeAxZcudhLi10TXwxVkDXHGSWTi0tWfj8Y8cXWv3VCztq0Gm2KXfco" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" integrity="sha384-FFlB1hIOsGcn0tPL1geEefKqnma+njvCOpEeyAuK3vSczL58eEbzMXzKWmbKxl1F" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/chota"
+        integrity="sha384-NbUQ8fi+g8yeAxZcudhLi10TXwxVkDXHGSWTi0tWfj8Y8cXWv3VCztq0Gm2KXfco" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"
+        integrity="sha384-FFlB1hIOsGcn0tPL1geEefKqnma+njvCOpEeyAuK3vSczL58eEbzMXzKWmbKxl1F" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
     <!-- ************************************* NAVBAR *************************************************** -->
-    <nav class="nav sticky" style="background-color:#13131612">
+    <nav class="nav sticky" id="navbar">
         <div class=nav-left>
             <a class="brand">
                 <img src="https://icongr.am/simple/aerlingus.svg?size=100&color=ffffff&colored=false" alt="Art Studio">
@@ -30,23 +32,27 @@
 
     <div class="glider-contain">
         <div class="glider">
-            <div id="carousel-slide1"></div>
-            <div id="carousel-slide2"></div>
-            <div id="carousel-slide3"></div>
+            <div id="carousel-slide1" class="carousel-slide"></div>
+            <div id="carousel-slide2" class="carousel-slide"></div>
+            <div id="carousel-slide3" class="carousel-slide"></div>
         </div>
 
-        <button aria-label="Previous" class="glider-prev"> « </button>
-        <button aria-label="Next" class="glider-next"> » </button>
-        <div role="tablist" class="dots"></div>
+        <button aria-label="Previous" class="glider-prev">
+            <img src="https://icongr.am/fontawesome/chevron-left.svg?size=30&color=ffffff" alt="chevron-left">
+        </button>
+        <button aria-label="Next" class="glider-next">
+            <img src="https://icongr.am/fontawesome/chevron-right.svg?size=30&color=ffffff" alt="chevron-right">
+        </button>
+
+        <div role="tablist" id="dots"></div>
     </div>
 
     <!-- ************************************* SCRIPTS ************************************************** -->
 
-    <script type="text/javascript" src="js/darkMode.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js" integrity="sha384-V8Uz0G+fJlywusJOFYkueq5mfIRAfETQX2Wa2kwErnrGheHCpyDoBygo8i4tEqgd" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/carousel.js"></script>
-    <script type='text/javascript' src="js/config.js"></script>
-    <script type="text/javascript" src="js/getRandomPhotoSvc.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"
+        integrity="sha384-V8Uz0G+fJlywusJOFYkueq5mfIRAfETQX2Wa2kwErnrGheHCpyDoBygo8i4tEqgd"
+        crossorigin="anonymous"></script>
+    <script type="module" src="js/index.js"></script>
 </body>
 
 </html>

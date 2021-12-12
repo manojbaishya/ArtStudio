@@ -6,13 +6,23 @@ body.dark {
     --color-darkGrey: #777;
 }
 
-.sticky {
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0;
+nav.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
-.glider-contain {
-    margin-top: 3em;
-    width: 50%;
+#navbar {
+    background-color: #13131612;
 }
+
+/* .carousel-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-slide>img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+} */
