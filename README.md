@@ -1,4 +1,4 @@
-# Project Name
+# Art Studio
 
 A gallery or showcase website for a (fictional) Art Studio.
 

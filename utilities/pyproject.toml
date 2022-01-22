@@ -7,10 +7,12 @@ authors = ["manojbaishya <28330014+manojbaishya@users.noreply.github.com>"]
 [tool.poetry.dependencies]
 python = "^3.10"
 requests = "^2.26.0"
+Pillow = "^8.4.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
 flake8 = "^4.0.1"
+black = {version = "^21.12b0", allow-prereleases = true}
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
