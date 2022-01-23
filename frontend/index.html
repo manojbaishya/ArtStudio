@@ -5,53 +5,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Art Studio</title>
+    <title>
+        Art
+        Studio</title>
 
-    <link rel="stylesheet" href="https://unpkg.com/chota"
-        integrity="sha384-NbUQ8fi+g8yeAxZcudhLi10TXwxVkDXHGSWTi0tWfj8Y8cXWv3VCztq0Gm2KXfco" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"
-        integrity="sha384-FFlB1hIOsGcn0tPL1geEefKqnma+njvCOpEeyAuK3vSczL58eEbzMXzKWmbKxl1F" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/bulmaswatch/darkly/bulmaswatch.min.css"
+        integrity="sha384-lP/YRCrL9YAAe68K7HzXH5qC1+B2J48VZ6BMhBRvb2OdOn8NuVjH1ebSuugP7pUE" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-    <!-- ************************************* NAVBAR *************************************************** -->
-    <nav class="nav sticky" id="navbar">
-        <div class=nav-left>
-            <a class="brand">
-                <img src="https://icongr.am/simple/aerlingus.svg?size=100&color=ffffff&colored=false" alt="Art Studio">
-            </a>
-        </div>
-        <div class="nav-right tabs">
-            <a>Projects</a>
-            <a>Services</a>
-            <a>Contact Us</a>
-        </div>
-    </nav>
-    <!-- ************************************* CAROUSEL ************************************************** -->
 
-    <div class="glider-contain">
-        <div class="glider">
-            <div id="carousel-slide1" class="carousel-slide"></div>
-            <div id="carousel-slide2" class="carousel-slide"></div>
-            <div id="carousel-slide3" class="carousel-slide"></div>
+    <div class="flexcontainer">
+        <div id="canvas-left">
+            <aside class="menu sidebar">
+                <p class="menu-label">
+                    <a href="index.html">Ophir
+                        Sheriff</a>
+                </p>
+                <ul class="menu-list">
+                    <li>
+                        <a>Concept
+                            Art</a>
+                    </li>
+                    <li>
+                        <a>Illustration</a>
+                    </li>
+                    <li>
+                        <a>Projects</a>
+                    </li>
+                    <li>
+                        <a href="showcase.html">Gallery</a>
+                    </li>
+                    <li>
+                        <a>Design</a>
+                    </li>
+                    <li>
+                        <a>Services</a>
+                    </li>
+                    <li>
+                        <a>About</a>
+                    </li>
+                    <li>
+                        <a>Contact</a>
+                    </li>
+                </ul>
+            </aside>
         </div>
-
-        <button aria-label="Previous" class="glider-prev">
-            <img src="https://icongr.am/fontawesome/chevron-left.svg?size=30&color=ffffff" alt="chevron-left">
-        </button>
-        <button aria-label="Next" class="glider-next">
-            <img src="https://icongr.am/fontawesome/chevron-right.svg?size=30&color=ffffff" alt="chevron-right">
-        </button>
-
-        <div role="tablist" id="dots"></div>
+        <div id="content">
+            <div>
+                <img src="assets/img/large/home.jpg" alt="Cover Art" id="cover-img">
+                <p class="has-text-right">
+                    Creative director, concept artist, and visual problem-solver. </p>
+                    <p id="lorem-ipsum"></p>
+            </div>
+        </div>
     </div>
 
-    <!-- ************************************* SCRIPTS ************************************************** -->
-
-    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"
-        integrity="sha384-V8Uz0G+fJlywusJOFYkueq5mfIRAfETQX2Wa2kwErnrGheHCpyDoBygo8i4tEqgd"
-        crossorigin="anonymous"></script>
     <script type="module" src="js/index.js"></script>
 </body>
 

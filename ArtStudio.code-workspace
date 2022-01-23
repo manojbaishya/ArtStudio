@@ -11,6 +11,10 @@
         {
             "name": "utilities",
             "path": "utilities"
+        },
+        {
+            "name": "solution",
+            "path": "."
         }
     ],
     "settings": {
