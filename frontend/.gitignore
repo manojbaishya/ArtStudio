@@ -131,5 +131,10 @@ dist
 # API Keys
 js/config.js
 
+<<<<<<< HEAD
 # Assets
 assets/
+=======
+# Images
+assets/
+>>>>>>> e3c0d14d9cece18e7704255ca88b6fd46c770f24

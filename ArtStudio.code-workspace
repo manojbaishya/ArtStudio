@@ -13,13 +13,28 @@
             "path": "utilities"
         },
         {
+<<<<<<< HEAD
             "name": "solution",
             "path": "."
+=======
+            "name": "workspace",
+            "path": "./"
+>>>>>>> e3c0d14d9cece18e7704255ca88b6fd46c770f24
         }
     ],
     "settings": {
         "csharp2plantuml.inputPath": "ArtStudio.Core",
         "csharp2plantuml.outputPath": "ArtStudio.Diagrams/ArtStudio.Core",
-        "workspaceRoot": "/home/manoj/Data/Personal/Projects/Code/General/ArtStudio"
+        "workspaceRoot": "/home/manoj/Data/Personal/Projects/Code/General/ArtStudio",
+        "files.exclude": {
+            "**/.git": true,
+            "**/.svn": true,
+            "**/.hg": true,
+            "**/CVS": true,
+            "**/.DS_Store": true,
+            "backend": true,
+            "frontend": true,
+            "utilities": true
+            }
     }
 }
